@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f9c">
+<meta name="description" content="Ramen Riga — a taste of Tokyo in the heart of Riga. Discover ramen, wok, bao, poke and Japanese-inspired favorites at Stabu iela 14.">
+<title>RAMEN RIGA — A Little Tokyo in Riga</title>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="Ramen Riga — A Little Tokyo in Riga">
+<meta property="og:description" content="A Japanese-inspired ramen house where every bowl is a little trip to Tokyo.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Ramen Riga","servesCuisine":["Japanese","Ramen"],"telephone":"+37129110334","address":{"@type":"PostalAddress","streetAddress":"Stabu iela 14","addressLocality":"Rīga","postalCode":"LV-1011","addressCountry":"LV"},"sameAs":["https://www.instagram.com/ramenriga/","https://wolt.com/lv/lva/riga/restaurant/ramen-riga"]}</script>
+</head>
+<body>
+<a class="skip-link" href="#menu">Skip to menu</a>
+<div class="page-loader" id="pageLoader" aria-hidden="true"><span class="loader-kanji">麺</span><span>RAMEN RIGA</span></div>
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#top" aria-label="Ramen Riga — back to top">
+    <span class="brand-stamp brand-stamp--logo"><img src="assets/ramen-riga-logo-square.png" alt="Ramen Riga logo"></span>
+    <span class="brand-name">RAMEN<span>RIGA</span><small>SLURP · SIP · SMILE</small></span>
+  </a>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    <a href="#story">Our Story</a><a href="#menu">The Menu</a><a href="#gallery">The Space</a><a href="#visit">Find Us</a>
+  </nav>
+  <div class="header-actions">
+    <a class="nav-order" href="https://wolt.com/lv/lva/riga/restaurant/ramen-riga" target="_blank" rel="noopener noreferrer">ORDER ONLINE <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" inert>
+  <a href="#story">Our Story</a><a href="#menu">The Menu</a><a href="#gallery">The Space</a><a href="#visit">Find Us</a>
+  <a href="https://wolt.com/lv/lva/riga/restaurant/ramen-riga" target="_blank" rel="noopener noreferrer">Order on Wolt ↗</a>
+</nav>
+<main>
+<section class="hero" id="top" aria-labelledby="heroTitle">
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="sky-cloud sky-cloud--one" aria-hidden="true"></div>
+  <div class="sky-cloud sky-cloud--two" aria-hidden="true"></div>
+  <div class="sun-disc" aria-hidden="true"></div>
+  <div class="vertical-japanese" aria-hidden="true">美味しいラーメンを、リガで。</div>
+  <div class="hero-overline"><span class="overline-line"></span> JAPAN IN THE HEART OF RĪGA <span class="overline-line"></span></div>
+  <img class="fuji" id="fujiImage" src="assets/fuji-transparent.png" alt="" aria-hidden="true">
+  <div class="hero-main">
+    <div class="hero-copy">
+      <span class="eyebrow hero-kicker"><span class="red-dot"></span> THE CITY'S RAMEN SPOT</span>
+      <h1 id="heroTitle">RAMEN<br><em>RIGA</em><span class="title-circle" aria-hidden="true">日</span></h1>
+      <p>A little Tokyo in every bowl.<br>A whole lot of soul in every slurp.</p>
+      <div class="hero-buttons"><a class="btn btn-light" href="#menu">EXPLORE THE MENU <span>↗</span></a><a class="text-link" href="#story">DISCOVER OUR STORY <span>→</span></a></div>
+    </div>
+    <div class="hero-feature hero-feature--showcase" id="heroFeature" aria-label="Featured ramen bowls photographed at Ramen Riga">
+      <div class="hero-feature-ring ring-one"></div><div class="hero-feature-ring ring-two"></div>
+      <div class="steam steam-one" aria-hidden="true">〜</div><div class="steam steam-two" aria-hidden="true">〜</div>
+      <div class="bowl-photo bowl-showcase" id="heroBowlShowcase" aria-live="polite">
+        <figure class="bowl-slide active" data-key="wagyu" data-name="Wagyu ramen"><img alt="Wagyu ramen bowl at Ramen Riga" fetchpriority="high"></figure>
+        <figure class="bowl-slide" data-key="chashu" data-name="Chashu ramen"><img alt="Chashu ramen bowl at Ramen Riga"></figure>
+        <figure class="bowl-slide" data-key="duck" data-name="Tokyo duck ramen"><img alt="Tokyo duck ramen bowl at Ramen Riga"></figure>
+        <figure class="bowl-slide" data-key="chicken" data-name="Chicken ramen"><img alt="Chicken ramen bowl at Ramen Riga"></figure>
+        <div class="bowl-caption">
+          <span class="bowl-caption-label">FEATURED BOWLS</span>
+          <strong id="heroBowlName">Wagyu ramen</strong>
+          <div class="bowl-dots" id="heroBowlDots" aria-label="Select featured bowl">
+            <button type="button" class="bowl-dot active" data-index="0" aria-label="Show Wagyu ramen"></button>
+            <button type="button" class="bowl-dot" data-index="1" aria-label="Show Chashu ramen"></button>
+            <button type="button" class="bowl-dot" data-index="2" aria-label="Show Tokyo duck ramen"></button>
+            <button type="button" class="bowl-dot" data-index="3" aria-label="Show Chicken ramen"></button>
+          </div>
+        </div>
+      </div>
+      <div class="bowl-sticker bowl-sticker--logo"><img src="assets/ramen-riga-logo-square.png" alt="Ramen Riga logo"><span>SIGNATURE</span><strong>RR</strong><span>RIGA</span></div>
+    </div>
+  </div>
+  <div class="hero-water" aria-hidden="true">
+    <div class="water-shimmer"></div>
+    <svg class="wave wave-back" viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0 50C210 5 367 118 600 69S1030 4 1440 58V200H0Z"/></svg>
+    <svg class="wave wave-front" viewBox="0 0 1440 170" preserveAspectRatio="none"><path d="M0 58C250 125 357 20 628 65S1115 128 1440 44V170H0Z"/></svg>
+    <div class="ripples ripple-one"></div><div class="ripples ripple-two"></div><div class="ripples ripple-three"></div>
+    <div class="fish-swim fish-swim--orange"><img src="assets/koi-orange.png" alt=""></div>
+    <div class="fish-swim fish-swim--ivory"><img src="assets/koi-ivory.png" alt=""></div>
+    <div class="fish-swim fish-swim--small"><img src="assets/koi-orange.png" alt=""></div>
+  </div>
+  <div class="hero-footer"><span>GOOD FOOD. GOOD MOOD. GREAT RAMEN.</span><a href="#menu" class="scroll-down">SCROLL TO DISCOVER <span class="scroll-arrow">↓</span></a><span>STABU IELA 14 · RĪGA</span></div>
+</section>
+<div class="marquee-strip" aria-hidden="true"><div class="marquee-content">ラーメン RIGA &nbsp; ✦ &nbsp; HOT BOWLS, HAPPY SOULS &nbsp; ✦ &nbsp; 東京からリガへ &nbsp; ✦ &nbsp; RAMEN RIGA &nbsp; ✦ &nbsp; HOT BOWLS, HAPPY SOULS &nbsp; ✦ &nbsp; ラーメン RIGA &nbsp; ✦ &nbsp; HOT BOWLS, HAPPY SOULS &nbsp; ✦ &nbsp; 東京からリガへ &nbsp; ✦ &nbsp; RAMEN RIGA &nbsp; ✦ &nbsp;</div></div>
+<section class="intro-section" id="story" aria-labelledby="introTitle">
+  <div class="section-number">01 / THE SOUL OF RAMEN</div>
+  <div class="intro-grid">
+    <div class="intro-left reveal"><div class="intro-vertical-text" aria-hidden="true">一杯の中に日本の心</div><span class="brush-line"></span><h2 id="introTitle">FROM <span>TOKYO</span><br>WITH <i>LOVE.</i></h2><p>Inspired by the irresistible streets of Japan, made for the people of Riga. We believe the best moments begin with a steaming bowl, good company and something delicious.</p><p>Rich broth. Slurp-worthy noodles. A place that feels like a little adventure, right around the corner.</p><a class="round-link" href="#menu">EXPLORE OUR FOOD <span>↗</span></a></div>
+    <div class="intro-right reveal"><div class="intro-photo-frame"><img src="https://blog.wolt.com/wp-content/uploads/2021/05/2-1024x681.jpg" alt="A bowl of ramen served at Ramen Riga" loading="lazy" onerror="this.onerror=null;this.src='assets/ramen-illustration.svg'"><span class="photo-corner corner-tl"></span><span class="photo-corner corner-br"></span></div><div class="intro-side-note"><strong>ずっとおいしい</strong><span>MADE TO MAKE YOU SLURP</span></div><div class="stamp-mark" aria-hidden="true">味<br>一</div></div>
+  </div>
+</section>
+<section class="menu-section" id="menu" aria-labelledby="menuTitle">
+  <div class="menu-radial" aria-hidden="true"></div><div class="menu-kanji-bg" aria-hidden="true">麺</div>
+  <img class="menu-fish menu-fish-one" src="assets/koi-ivory.png" alt="" aria-hidden="true">
+  <div class="menu-inner"><div class="menu-header reveal"><div class="section-number section-number-light">02 / A BOWL FOR EVERY SOUL</div><h2 id="menuTitle">THE <span>GOOD</span> STUFF<span class="menu-exclamation">!</span></h2><div class="menu-heading-row"><p>From our signature ramen to crispy little bites, pick your craving and dive right in.</p><div class="menu-japanese">いただきます <span>ITADAKIMASU!</span></div></div></div>
+    <div class="menu-tabs" id="menuTabs" role="group" aria-label="Filter menu">
+      <button class="menu-tab active" type="button" data-category="ramen" aria-pressed="true">RAMEN <span>🍜</span></button>
+      <button class="menu-tab" type="button" data-category="wok" aria-pressed="false">WOK <span>🥡</span></button>
+      <button class="menu-tab" type="button" data-category="poke" aria-pressed="false">POKE <span>🥗</span></button>
+      <button class="menu-tab" type="button" data-category="bao" aria-pressed="false">BAO & BITES <span>🥟</span></button>
+      <button class="menu-tab" type="button" data-category="onigiri" aria-pressed="false">ONIGIRI <span>🍙</span></button>
+      <button class="menu-tab" type="button" data-category="drinks" aria-pressed="false">DRINKS <span>🍹</span></button>
+    </div>
+    <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+    <div class="menu-bottom"><p>Prices and availability follow the public Wolt listing and may change.</p><a class="btn btn-cream" target="_blank" rel="noopener noreferrer" href="https://wolt.com/lv/lva/riga/restaurant/ramen-riga">VIEW & ORDER ON WOLT <span>↗</span></a></div>
+  </div>
+</section>
+<section class="chef-section" id="chef" aria-labelledby="chefTitle"><div class="chef-inner">
+  <div class="chef-photo reveal"><div class="chef-photo-border"></div><img src="https://blog.wolt.com/wp-content/uploads/2021/05/1.jpg" alt="Chef Mārtiņš Sirmais holding a bowl at Ramen Riga" loading="lazy" onerror="this.onerror=null;this.src='assets/ramen-illustration.svg';this.alt='Ramen illustration; chef photo unavailable'"><div class="chef-caption">THE MAN BEHIND THE MAGIC <span>↗</span></div></div>
+  <div class="chef-copy reveal"><div class="section-number">03 / MEET THE MAKER</div><span class="small-ja">ラーメンは愛です</span><h2 id="chefTitle">MORE THAN<br><em>JUST</em> RAMEN.</h2><p>Ramen Riga was born from a love for Tokyo's food culture. Chef <strong>Mārtiņš Sirmais</strong> and the team brought that unmistakable Japanese ramen-house spirit to Riga: honest flavors, generous bowls and a warm welcome.</p><div class="chef-quote"><span>“</span><p>A little taste of Japan, in the heart of our city.</p></div><a class="round-link" href="#gallery">TAKE A LOOK INSIDE <span>↗</span></a></div>
+</div><div class="chef-decor-text" aria-hidden="true">GOOD FOOD GOOD MOOD</div></section>
+<section class="gallery-section" id="gallery" aria-labelledby="galleryTitle"><div class="gallery-head"><div><div class="section-number section-number-light">04 / LIFE AT RAMEN RIGA</div><h2 id="galleryTitle">COME FOR THE <em>RAMEN.</em><br>STAY FOR THE <span>VIBE.</span></h2></div><a href="https://www.instagram.com/ramenriga/" target="_blank" rel="noopener noreferrer" class="insta-link">FOLLOW OUR WORLD <span>@RAMENRIGA ↗</span></a></div>
+  <div class="gallery-grid">
+    <a class="gallery-photo gallery-photo-one reveal" href="https://www.instagram.com/ramenriga/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://neighborhood.lv/wp-content/webp-express/webp-images/uploads/2025/11/vertical-2025-11-24t191412.162-700x928.jpg.webp" alt="Light-filled Japanese-inspired room at Ramen Riga" onerror="this.onerror=null;this.src='assets/ramen-illustration.svg'"><span class="gallery-label">THE SPACE <b>01</b></span></a>
+    <a class="gallery-photo gallery-photo-two reveal" href="https://www.instagram.com/ramenriga/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://neighborhood.lv/wp-content/webp-express/webp-images/uploads/2025/11/vertical-2025-11-24t191416.362-700x928.jpg.webp" alt="Colorful dishes and ramen at Ramen Riga" onerror="this.onerror=null;this.src='assets/ramen-illustration.svg'"><span class="gallery-label">THE FOOD <b>02</b></span></a>
+    <a class="gallery-photo gallery-photo-three reveal" href="https://www.instagram.com/ramenriga/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://neighborhood.lv/wp-content/webp-express/webp-images/uploads/2025/11/vertical-2025-11-24t201612.511-700x928.jpg.webp" alt="Table set for a meal in the Japanese-inspired restaurant" onerror="this.onerror=null;this.src='assets/ramen-illustration.svg'"><span class="gallery-label">THE MOMENTS <b>03</b></span></a>
+    <a class="gallery-photo gallery-photo-four reveal" href="https://www.instagram.com/ramenriga/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://blog.wolt.com/wp-content/uploads/2021/05/4-1024x681.jpg" alt="Chef at the Ramen Riga restaurant counter" onerror="this.onerror=null;this.src='assets/ramen-illustration.svg'"><span class="gallery-label">OUR PEOPLE <b>04</b></span></a>
+  </div>
+</section>
+<section class="visit-section" id="visit" aria-labelledby="visitTitle"><div class="visit-water" aria-hidden="true"><div class="visit-ripple"></div><img src="assets/koi-orange.png" class="visit-koi" alt=""></div><div class="visit-inner"><div class="visit-copy"><div class="section-number">05 / SEE YOU SOON</div><h2 id="visitTitle">YOUR NEXT<br><i>RAMEN</i> DATE<br>IS HERE.</h2><p>Find a seat, grab your chopsticks and make yourself at home.</p><div class="visit-actions"><a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=Ramen+Riga+Stabu+iela+14" target="_blank" rel="noopener noreferrer">GET DIRECTIONS <span>↗</span></a><a class="btn btn-outline" href="https://wolt.com/lv/lva/riga/restaurant/ramen-riga" target="_blank" rel="noopener noreferrer">ORDER DELIVERY <span>↗</span></a></div></div><div class="visit-card"><div class="visit-card-head"><span>RAMEN RIGA</span><span>ラーメン・リガ</span></div><div class="visit-detail"><small>FIND US AT</small><strong>Stabu iela 14<br>Rīga, LV-1011</strong></div><div class="visit-detail"><small>GIVE US A CALL</small><a href="tel:+37129110334">+371 29 110 334</a></div><div class="visit-detail"><small>WOLT DELIVERY HOURS*</small><p>Mon – Thu <span>12:00 – 20:00</span><br>Fri – Sat <span>12:00 – 21:00</span><br>Sunday <span>12:00 – 20:00</span></p><small class="hours-disclaimer">*Restaurant opening hours may differ. Check before visiting.</small></div><a href="https://www.instagram.com/ramenriga/" target="_blank" rel="noopener noreferrer" class="visit-instagram">INSTAGRAM <span>↗</span></a></div></div></section>
+</main>
+<footer class="footer"><div class="footer-main"><a class="footer-brand footer-brand-lockup" href="#top"><img src="assets/ramen-riga-logo-square.png" alt="Ramen Riga logo"><span>RAMEN <span>RIGA.</span></span></a><div class="footer-japanese">ごちそうさまでした。</div><p>Life is better with ramen.</p></div><div class="footer-bottom"><span>© <span id="year">2026</span> RAMEN RIGA · RĪGA, LATVIA</span><span>DESIGNED WITH <span aria-label="love">♥</span> & A LITTLE JAPAN</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
